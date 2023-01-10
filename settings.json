@@ -1,0 +1,614 @@
+{
+    //字体
+    "editor.fontFamily": "JetBrainsMono NF",
+    "editor.fontLigatures": true, // 连写
+    "editor.fontWeight": "normal",
+    "editor.fontSize": 17,
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "editor.lineHeight": 1.4,
+    "files.autoSave": "afterDelay",
+    //部分窗口UI//
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "toggle", // 按下alt才会出现左上角菜单栏
+    "window.commandCenter": true, // 顶部显示命令窗口
+    "editor.minimap.maxColumn": 60, // 代码地图大小
+    "editor.wordWrapColumn": 120, // 一行最大长度
+    // 控制折行的方式。
+    //  - off: 永不换行。
+    //  - on: 将在视区宽度处换行。
+    //  - wordWrapColumn: 在 `editor.wordWrapColumn` 处折行。
+    //  - bounded: 在视区宽度和 `editor.wordWrapColumn` 中的较小值处折行。
+    "editor.wordWrap": "bounded",
+    // 在 `editor.wordWrap` 为 `wordWrapColumn`  或 `bounded` 时，控制编辑器的折行列。
+    // 控制折行的缩进。
+    //  - none: 没有缩进。折行从第 1 列开始。
+    //  - same: 折行的缩进量与其父级相同。
+    //  - indent: 折行的缩进量比其父级多 1。
+    //  - deepIndent: 折行的缩进量比其父级多 2。
+    "editor.wrappingIndent": "same",
+    "files.trimTrailingWhitespace": true, // 删除行尾空格
+    "editor.stickyScroll.enabled": true, // 浏览函数时，固定函数名
+    //better comments//
+    "better-comments.tags": [
+        {
+            "tag": "BUG",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        // 代码需要修正
+        {
+            "tag": "FIXME",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        // 提示
+        {
+            "tag": "HINT",
+            "color": "#2faf64",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        // 描述代码功能
+        {
+            "tag": "NOTE",
+            "color": "#00b7e4",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "workbench.editorAssociations": {
+        "*.hex": "hexEditor.hexedit",
+        "*.ini": "hexEditor.hexedit"
+    },
+    // C_CPP
+    // "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM,  UseTab: Never, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: true, IndentCaseLabels: false, ColumnLimit: 200, AccessModifierOffset: -4 ,BreakBeforeBraces: Attach}",
+    "C_Cpp.errorSquiggles": "enabled", // c cpp语法提示
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4}",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.commentContinuationPatterns": [
+        "/**"
+    ],
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true, // 类型提示
+    "C_Cpp.inlayHints.parameterNames.enabled": true, // 函数参数提示
+    "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false, // 参数和变量同名时也提示
+    "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores": false, // 下划线开头也显示提示
+    "C_Cpp.inlayHints.referenceOperator.enabled": true, // 显示引用类型
+    "C_Cpp.inlayHints.referenceOperator.showSpace": true, // 引用类型“&”后加一个空格
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.autoIndent": "advanced"
+    },
+    "editor.detectIndentation": false,
+    // TODO 设置bash为terminal
+    // "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
+    "explorer.confirmDelete": false,
+    "mssql.connections": [
+        {
+            "server": "localhost",
+            "database": "Text4",
+            "authenticationType": "SqlLogin",
+            "user": "Jor",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "localhost"
+        }
+    ],
+    "mssql.enableQueryHistoryCapture": true,
+    "python.linting.flake8Enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "KeilAssistant.C51.Uv4Path": "",
+    "[jsonc]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "json.schemas": [],
+    "local-history.exclude": [
+        "**/.history/**",
+        "**/.vscode/**",
+        "**/node_modules/**",
+        "**/typings/**",
+        "**/out/**",
+        "**/Code/User/**"
+    ],
+    "local-history.saveDelay": 300,
+    "problems.showCurrentInStatus": true,
+    "KeilAssistant.MDK.Uv4Path": "D:\\MySoftWares\\Keil5\\MDK\\UV4\\UV4.exe",
+    "files.autoGuessEncoding": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "verilog.ctags.path": "D:\\Programs\\ctags\\ctags.exe",
+    "verilog.linting.linter": "modelsim",
+    "verilog.linting.modelsim.work": "D:\\XilinxISE\\modelsim_tb_vscode\\test",
+    "verilog.runInTerminal": true,
+    "git.autofetch": true,
+    "EIDE.C51.INI.Path": "d:\\Keil5Programs\\TOOLS.INI",
+    "EIDE.ARM.GCC.InstallDirectory": "${userRoot}\\.eide\\tools\\gcc_arm",
+    "verilog-format.path": "C:\\Users\\14893\\.vscode\\extensions\\ericsonj.verilogformat-1.0.1\\verilog-format.exe",
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "bracketPairColorizer.depreciation-notice": false,
+    "verilog-format.settings": "C:\\Users\\14893\\.vscode\\extensions\\ericsonj.verilogformat-1.0.1\\verilog\\.verilog-format.properties",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorCustomizations": {
+        // 选中高亮
+        // "editor.selectionBackground": "#285086",
+        "editor.selectionBackground": "#d1d1c6",
+        // "editor.selectionHighlightBackground": "#2e629e"
+    },
+    "editor.tabCompletion": "on",
+    "hediet.vscode-drawio.theme": "dark",
+    "python.formatting.provider": "yapf",
+    "vscode-office.openOutline": false,
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xe->bib->xe->xe",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.viewer.command": "D:/Program Files/SumatraPDF/SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.synctex.command": "D:/Program Files/SumatraPDF/SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "-forward-search",
+        "%TEX%",
+        "%LINE%",
+        "-reuse-instance",
+        "-inverse-search",
+        "\"D:/Program Files/Microsoft_VS_Code/Code.exe\" -g \"%f:%l\"",
+        "%PDF%"
+    ],
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+    "latex-workshop.bibtex-format.tab": "4 spaces",
+    "matlab.linterEncoding": "gb2312",
+    "matlab.matlabpath": "D:\\ProgramF\\MATLAB\\R2016b\\bin\\matlab.exe",
+    "matlab.mlintpath": "D:\\ProgramF\\MATLAB\\R2016b\\bin\\win64\\mlint.exe",
+    "remote.SSH.configFile": "C:\\Users\\14893\\.ssh\\config",
+    "remote.SSH.enableRemoteCommand": true,
+    "remote.SSH.path": "D:\\Program Files\\Git\\usr\\bin",
+    "remote.SSH.remotePlatform": {
+        "swk": "linux"
+    },
+    // "remote.SSH.showLoginTerminal": true
+    "editor.renderWhitespace": "all", // 显示空格
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "clangd.arguments": [
+        "--background-index",
+        "--clang-tidy",
+        "-j=12",
+        "--compile-commands-dir=${workspaceFolder}/build"
+    ],
+    "clang-format.executable": "D:\\MySoftWares\\VisualStudioCode\\Clang_Format\\clang-format.exe",
+    "markdown.preview.fontSize": 15,
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.hint.commentDescription": false,
+    "leetcode.hint.commandShortcut": false,
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.workspaceFolder": "/home/sunwukong/workspaces/leetcode",
+    //==========================vim===================================//
+    "vim.autoSwitchInputMethod.enable": true,
+    "vim.autoSwitchInputMethod.defaultIM": "1033",
+    "vim.autoSwitchInputMethod.obtainIMCmd": "D:\\MySoftWares\\im_select\\im-select.exe",
+    "vim.autoSwitchInputMethod.switchIMCmd": "D:\\MySoftWares\\im_select\\im-select.exe {im}",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.timeout": 500,
+    "vim.leader": "<space>",
+    "vim.foldfix": true, // 光标移动时是否打开折叠的代码 true-否 false-是
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "k",
+                "l"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // {
+        //     "before": [
+        //         "<leader>",
+        //         "<leader>"
+        //     ],
+        //     "commands": [
+        //         ":set relativenumber"
+        //     ]
+        // }, //vim下相对行号设置命令
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ] // 把vim的撤销映射为vscode的撤销
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "commands": [
+                "redo"
+            ] // 把vim的ctrl+r映射为vscode的ctrl+y
+        },
+        {
+            "before": [
+                "U"
+            ],
+            "commands": [
+                "redo"
+            ] // 把vim的ctrl+r映射为vscode的ctrl+y
+        },
+        {
+            "before": [
+                "c",
+                "a"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ] // code action
+        },
+        {
+            "before": [
+                "e",
+                "n"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ] // 打开下一个错误提示
+        },
+        {
+            "before": [
+                "e",
+                "p"
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ] // 打开上一个错误提示
+        },
+        {
+            "before": [
+                "<Enter>"
+            ],
+            "after": [
+                "o",
+                "Esc" // 添加一个空行
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "h"
+            ],
+            "commands": [
+                ":tabp"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "l"
+            ],
+            "commands": [
+                ":tabn"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "s",
+            ],
+            "commands": [
+                ":vsplit"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "h",
+                "s"
+            ],
+            "commands": [
+                ":split"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl",
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "lineBreakInsert"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                ":w!"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                ":q!"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "q"
+            ],
+            "commands": [
+                ":wq!"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "commands": [
+                "whichkey.show"
+            ]
+        },
+    ],
+    // 屏蔽vscode快捷键
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-h>": false,
+        "<C-f>": false,
+        "<C-c>": false,
+        "<C-d>": false,
+        "<C-v>": false,
+        "<C-z>": false,
+        "<C-y>": false,
+        "<C-j>": false,
+        "<C-k>": false,
+        "<C-t>": false,
+        "<C-e>": false,
+    },
+    "editor.lineNumbers": "relative",
+    "vim.overrideCopy": false,
+    //==========================vim===================================//
+    //===========================优化插件速度===========================//
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1,
+        "ms-vscode.cpptools": 2
+    },
+    "cmake.configureOnOpen": true,
+    "cmake.configureOnEdit": false,
+    "hediet.vscode-drawio.codeLinkActivated": false,
+    "python.defaultInterpreterPath": "D:\\MySoftWares\\Anaconda3\\envs\\modbus_test\\python.exe",
+    "editor.cursorSurroundingLines": 8,
+    "gitlens.mode.active": "zen",
+    // which key
+    "whichkey.bindings": [
+        // 对文件的操作
+        {
+            "key": "f",
+            "name": "+File",
+            "type": "bindings",
+            "bindings": [
+                {
+                    "key": "f",
+                    "name": "Show all files",
+                    "type": "command",
+                    "command": "workbench.action.quickOpen"
+                },
+                {
+                    "key": "b",
+                    "name": "Show all files in active group",
+                    "type": "command",
+                    "command": "workbench.action.showEditorsInActiveGroup"
+                },
+                {
+                    "key": "y",
+                    "name": "Copy path of active file",
+                    "type": "command",
+                    "command": "workbench.action.files.copyPathOfActiveFile"
+                },
+            ]
+        }
+    ],
+    "C_Cpp.codeAnalysis.clangTidy.enabled": false,
+    // 控制编辑器是否应运行在对屏幕阅读器进行优化的模式。
+    //  - auto: 编辑器将使用平台 API 以检测是否附加了屏幕阅读器。
+    //  - on: 编辑器将对屏幕阅读器的使用进行永久优化。
+    //  - off: 编辑器将不再对屏幕阅读器的使用进行优化。
+    "editor.accessibilitySupport": "off",
+    // 控制编辑器是否在用户键入、粘贴或移动行时自动调整缩进。必须安装包含此语言缩进规则的扩展。
+    "editor.autoIndent": "advanced"
+}
